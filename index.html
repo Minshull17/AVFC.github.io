@@ -17,6 +17,13 @@ function copyToClipboard(element) {
   element.remove()
 }
 
+function cpy(n)
+{
+var id=n;
+var txt=document.getElementById(id);
+txt.select();
+document.execCommand("copy");
+};
 	</script>
 
 </head>
@@ -29,24 +36,44 @@ function copyToClipboard(element) {
 
 <center>
 <p id="p1">Loan reduced to new maximum following down 
-valuation.</p>
+valuation of the property.</p>
 <p id="p2">ToE case owner: Rob Minshull</p><br/>
-<p id="p3">We have attempted to contact you today</p>
-<p id="p4">The solicitor must confirm prior to funds release that there is a<br>performing block management company in place together with appropriate<br>management and maintenance obligations that will ensure the ongoing<br>upkeep of the block/development.</p>
-<p id="p5">ToE case owner: Rob Minshull</p><br/>
-<p id="p6">We have attempted to contact you today</p>
+<p id="p3">Thank you for sending the rental bank statements, I have assessed
+these and require some further clarification on the following items:</p>
+<p id="p4">Thank you for sending the company accounts, I have assessed<br>these and require some further clarification on the following items:
+</p>
+<p id="p5">The solicitor must confirm prior to funds release that there is a<br>performing block management company in place together with appropriate<br>management and maintenance obligations that will ensure the ongoing<br>upkeep of the block/development.</p>
+<p id="p6">We have attempted to call you today to discuss the application, if<br>there are any points on this letter you wish to discuss then you <br>can reach me by calling 0345 849 4040 and asking to speak to the <br>underwriter.</p>
 
 <button onclick="copyToClipboard('#p1')">Max loan down val</button>
 <button onclick="copyToClipboard('#p2')">ToE caseowner</button>
-<button onclick="copyToClipboard('#p3')">Callback AP</button>
-<button onclick="copyToClipboard('#p4')">Perf block mgmt co.</button>
-<button onclick="copyToClipboard('#p5')">ToE caseowner</button>
+<button onclick="copyToClipboard('#p3')">Bank statements</button>
+<button onclick="copyToClipboard('#p4')">Company accounts</button>
+<button onclick="copyToClipboard('#p5')">Perf mgmt co.</button>
 <button onclick="copyToClipboard('#p6')">Callback AP</button>
-<button onclick="copyToClipboard('#p7')">Callback AP</button>
+
   <br>
 
-<textarea id="Text1" cols="76" rows="25"></textarea>
-<button onclick="copyToClipboard('Text1')">Copy</button>
+
+<p id="p8">CFF & NWS both waived - see risk document for further 
+info.</p>
+<p id="p9">All three waived - see risk document for further 
+info.</p><br/>
+<p id="p10">We have attempted to contact you today</p>
+<p id="p11">Loan reduced to new maximum following down valuation.</p>
+<p id="p12">ToE case owner: Rob Minshull</p>
+<p id="p13">We have attempted to contact you today</p>
+
+<textarea id='n' cols="86" rows="30"></textarea>
+<button onclick="cpy('n')">Copy</button>
+<br>
+<button onclick="copyToClipboard('#p8')">CFF & NWS</button>
+<button onclick="copyToClipboard('#p9')">All three waived</button>
+<button onclick="copyToClipboard('#p10')">Sa100s</button>
+<button onclick="copyToClipboard('#p11')">TC/TYOs</button>
+<button onclick="copyToClipboard('#p12')">ToE caseowner</button>
+<button onclick="copyToClipboard('#p13')">Callback AP</button>
+
 
 </center>
 
