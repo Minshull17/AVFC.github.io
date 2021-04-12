@@ -1,15 +1,56 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        <style>
-            body {
-              background-image: url('banner.jpg');
-            }
-            </style>
-        <h1>
-            Hello
-        </h1>
-        <p>
-            This is a test page
-        </p>
-    </body>
+<head>
+	<title>Portal</title>
+	<style>
+		body {
+			background-color: white;
+			font-size: 0.1px;
+			color: white;
+		}
+	</style>
+	<script>
+function copyToClipboard(element) {
+  var text = $(element).clone().find('br').prepend('\r\n').end().text()
+  element = $('<textarea>').appendTo('body').val(text).select()
+  document.execCommand('copy')
+  element.remove()
+}
+
+	</script>
+
+</head>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <p style="color:wheat;font-size:55px;text-align:center;"></p>
+
+<center>
+<p id="p1">Loan reduced to new maximum following down 
+valuation.</p>
+<p id="p2">ToE case owner: Rob Minshull</p><br/>
+<p id="p3">We have attempted to contact you today</p>
+<p id="p4">The solicitor must confirm prior to funds release that there is a<br>performing block management company in place together with appropriate<br>management and maintenance obligations that will ensure the ongoing<br>upkeep of the block/development.</p>
+<p id="p5">ToE case owner: Rob Minshull</p><br/>
+<p id="p6">We have attempted to contact you today</p>
+
+<button onclick="copyToClipboard('#p1')">Max loan down val</button>
+<button onclick="copyToClipboard('#p2')">ToE caseowner</button>
+<button onclick="copyToClipboard('#p3')">Callback AP</button>
+<button onclick="copyToClipboard('#p4')">Perf block mgmt co.</button>
+<button onclick="copyToClipboard('#p5')">ToE caseowner</button>
+<button onclick="copyToClipboard('#p6')">Callback AP</button>
+<button onclick="copyToClipboard('#p7')">Callback AP</button>
+  <br>
+
+<textarea id="Text1" cols="76" rows="25"></textarea>
+<button onclick="copyToClipboard('Text1')">Copy</button>
+
+</center>
+
+
+
+</body>
 </html>
