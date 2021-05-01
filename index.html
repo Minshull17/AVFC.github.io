@@ -31,13 +31,7 @@ var txt=document.getElementById(id);
 txt.select();
 document.execCommand("copy");
 };
-		
-function setMail1Href(){
-        var linkTemplate="mailto:leeeyecard@gmail.com?subject=ServerError at (DATE)";
-        var mail1=Document.getElementById("mail1");
-        mail1.setAttribute("href",linkTemplate.replace("(DATE)",new Date().toDateString());
-        return true;
-    }
+
 </script>
 
 </head>
@@ -112,8 +106,7 @@ further info.</p><br/>
 	
 	<a href="mailto:Kofax.AriesNotes@paragonbank.co.uk?body=NB%0d%0aLTDCOSR">Kofax</a>
 	</div>
-	
-	<a id="mail1" onclick="setMail1Href()">Click</a>
+
 
 
 </center>
