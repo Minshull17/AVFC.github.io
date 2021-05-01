@@ -31,10 +31,8 @@ var txt=document.getElementById(id);
 txt.select();
 document.execCommand("copy");
 };
-	</script>
-	
-	<script>
-    function setMail1Href(){
+		
+function setMail1Href(){
         var linkTemplate="mailto:leeeyecard@gmail.com?subject=ServerError at (DATE)";
         var mail1=Document.getElementById("mail1");
         mail1.setAttribute("href",linkTemplate.replace("(DATE)",new Date().toDateString());
