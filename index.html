@@ -114,6 +114,14 @@ further info.</p><br/>
 	<button onclick="location.href='mailto:Kofax.AriesNotes@paragonbank.co.uk?body=NB%0d%0aHMLR%0d%0a';">HMLR</button>
 	<script> document.write('<button href="mailto:foo@bar.com?subject=email_' + new (Date().getTime()) + '">Date test</button>');
 	<script> document.write(new Date().toLocaleDateString()); </script>
+			
+	<script type="text/javascript">
+today = new Date();
+
+document.write("<p><a
+href=\"mailto:emailaddress@whatever.com?subject="+today.getDate()+":"+today.
+getMonth()+":"+(today.getYear()+1900)+"%20Report\">Email Report</a></p>");
+</script>
 	</div>
 	</p>
 
