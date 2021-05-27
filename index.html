@@ -40,22 +40,22 @@
  		 clear: both;
 		}
 	</style>
+	
 	<script>
-function copyToClipboard(element) {
-  var text = $(element).clone().find('br').prepend('\r\n').end().text()
-  element = $('<textarea>').appendTo('body').val(text).select()
-  document.execCommand('copy')
-  element.remove()
-}
+	function copyToClipboard(element) {
+  	var text = $(element).clone().find('br').prepend('\r\n').end().text()
+	  element = $('<textarea>').appendTo('body').val(text).select()
+ 	 document.execCommand('copy')
+ 	 element.remove()
+	}
 
-function cpy(n)
-{
-var id=n;
-var txt=document.getElementById(id);
-txt.select();
-document.execCommand("copy");
-};
-		
+	function cpy(n)
+	{
+	var id=n;
+	var txt=document.getElementById(id);
+	txt.select();
+	document.execCommand("copy");
+	};
 	</script>
 
 </head>
